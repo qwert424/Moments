@@ -1,0 +1,32 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages":[
+    "pages/index/index",
+    "pages/submit/submit"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#863020",
+    "navigationBarTitleText": "个人 空间",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"说说",
+      "iconPath":"/assets/shuoshuo.png",
+      "selectedIconPath":"/assets/shuoshuoSelect.png"
+    },{
+      "pagePath":"pages/submit/submit",
+      "text":"发布",
+      "iconPath":"/assets/fabu.png",
+      "selectedIconPath":"/assets/fabuSelect.png"
+    }],
+    "color": "#999",
+    "selectedColor":"#333",
+    "backgroundColor":"#eee",
+    "borderStyle":"white",
+    "position":"bottom"
+  }
+}

@@ -1,0 +1,16 @@
+<!--pages/submit/submit.wxml-->
+<view class="submit-container">
+	<view class="button-container">
+		<van-button type="primary" size="mini" class="btn" bind:click="handleClick">发布</van-button>
+	</view>
+	<van-cell-group>
+		<van-field model:value="{{ title }}" placeholder="请输入说说标题" error-message="{{essMsg}}" label="标题" bind:blur="handleBlur" />
+	</van-cell-group>
+	<van-cell-group>
+		<van-field model:value="{{ inputValue }}" placeholder="这一刻的想法.." type="textarea" maxlength="300" show-word-limit autosize custom-style="margin-top:40rpx;margin-bottom:60rpx" />
+	</van-cell-group>
+	<view class="img-container">
+		<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" max-count="9" use-before-read bind:before-read="beforeRead" accept="image" multiple image-fit="aspectFill" />
+	</view>
+	<van-notify id="van-notify" />
+</view>

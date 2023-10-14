@@ -1,0 +1,19 @@
+/* pages/submit/submit.wxss */
+.img-container{
+	width: 100%;
+	padding: 0 40rpx;
+}
+.button-container{
+	width: 100%;
+	height: 80rpx;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 20rpx;
+	box-sizing: border-box;
+	margin-top: 20rpx;
+}
+
+.button-container .btn{
+letter-spacing: 8rpx;
+}

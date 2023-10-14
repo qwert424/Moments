@@ -1,0 +1,20 @@
+<!--components/messageItem/messageItem.wxml-->
+<view class="messageItem-container" bind:longpress="handleLongPress">
+	<view class="top-container">
+		<view class="left">
+			<text class="day">{{item.time.day}}</text>
+			<text class="month">{{item.time.month}}月</text>
+		</view>
+		<view class="right">
+			<view class="title">{{item.title}}</view>
+			<view class="inputVal">{{item.inputValue}}</view>
+		</view>
+	</view>
+	<view class="bottom-container">
+		<view class="img-container">
+			<image src="{{item.url}}" mode="aspectFill" wx:for="{{item.fileList}}" wx:key="this" class="img" data-index="{{index}}" bind:tap="handleTap"/>
+		</view>
+	</view>
+
+
+</view>

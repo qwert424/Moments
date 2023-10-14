@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "message-item":"/components/messageItem/messageItem",
+    "van-notify": "@vant/weapp/notify/index"
+  }
+}
