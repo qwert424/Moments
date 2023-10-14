@@ -14,6 +14,14 @@ Page({
         essMsg: "",//错误消息
         title: ""//标题
     },
+    // 删除图片
+    handleDetele(e) {
+        const newFileList = this.data.fileList
+       newFileList.splice(e.detail.index,1)
+        this.setData({
+            fileList:newFileList
+        })
+    },
     // 上传检验
     beforeRead(event) {
         const { file, callback } = event.detail;
@@ -97,4 +105,5 @@ Page({
             }
         })
     }
+
 })

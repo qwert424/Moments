@@ -10,7 +10,7 @@
 		<van-field model:value="{{ inputValue }}" placeholder="这一刻的想法.." type="textarea" maxlength="300" show-word-limit autosize custom-style="margin-top:40rpx;margin-bottom:60rpx" />
 	</van-cell-group>
 	<view class="img-container">
-		<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" max-count="9" use-before-read bind:before-read="beforeRead" accept="image" multiple image-fit="aspectFill" />
+		<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" max-count="9" use-before-read bind:before-read="beforeRead" accept="image" multiple image-fit="aspectFill" bind:delete="handleDetele" />
 	</view>
 	<van-notify id="van-notify" />
 </view>
